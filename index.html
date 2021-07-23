@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D_Producto</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body id="main">
+    <header id="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-bar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo-adidas-antiguo.jpg" alt="" width="250" height="150" class="d-inline-block align-text-top">
+          </a>
+          <ul class="navbar-nav ml-auto">
+            <li><a id="nav-link" href="#caract">CARACTERISTICAS</a></li>
+            <li><a id="nav-link" href="#video">CONOCE NUESTRO PRODUCTO</a></li>
+            <li><a id="nav-link" href="#precios">PRECIOS</a></li>
+        </ul>
+        </div>
+        </div>
+      </nav>
+    </header>
+    <div class="video">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/qL1jBohpn_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="container">
+        <section id="caract">
+        <div id="des-icon" class="icon">
+            <div class="inf">
+            <img src="https://image.flaticon.com/icons/png/128/2977/2977921.png" class="rounded float-start" alt="descuento">
+            <h2>DESCUENTO</h2>
+            <p>Descuento garantizado de un 15 % por compras  mayores a 200.000 pesos colombianos. Entre más elevada sea la compra
+                más alto será el descuento aplicado.
+            </p>
+            </div>
+        </div>
+
+        <div id="envio-icon" class="icon">
+            <div class="inf">
+            <img src="https://image.flaticon.com/icons/png/128/71/71222.png" class="rounded float-start" alt="envio">
+            <h2>ENVIO</h2>
+            <p>Contamos con un excelente servicio de envios, con el mayor alcance nacional y ventas internacionalmente,
+                además contamos con servicio pago contra-entrega, el cual genera mayor credibilidad para nuestros usuarios teniendo así la 
+                certeza de una compra segura.
+            </p>
+            </div>
+        </div>
+        <div id="proteger-icon" class="icon">
+            <div class="inf">
+            <img src="https://image.flaticon.com/icons/png/128/1320/1320521.png" class="rounded float-start" alt="proteger">
+            <h2>SEGURIDAD</h2>
+            <p>Todas sus compras son 100% seguras, ya que nuestra página web cuenta con protocolo https y demás points de verificación
+                impidiendo que sus datos puedan ser filtrados y manipulados con fines negativos. También contamos con la politica de servicio
+                "si no le gusta el producto, le regresamos su dinero".
+            </p>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <section id="precios">
+        <div class="productos" id="tenis">
+            <div class="puremotion">PUREMOTION</div>
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/c1095c85a6b54c84abe6ab9700aab7c1_9366/Tenis_Puremotion_Negro_FW3263_01_standard.jpg" alt="puremotion">
+            <h2>$250.000</h2>
+            <ul>
+                <li>Hombre/Dama.</li>
+                <li>Calzado deportivo.</li>
+                <li>Extracomodo.</li>
+            </ul>
+            <input type="submit" id="submit" class="btn" value="COMPRAR">
+        </div>
+
+        <div class="productos" id="conjunto">
+            <div class="conjunto">CONJUNTO DEPORTIVO</div>
+            <img src="https://http2.mlstatic.com/conjuntos-deportivos-hombre-adidas-D_NQ_NP_772148-MLA25857502993_082017-F.jpg" alt="conjunto">
+            <h2>$80.000</h2>
+            <ul>
+                <li>Diseño en poliester.</li>
+                <li>Textura ultra delgada para mayor comodidad.</li>
+                <li>Tecnología de absorción de humedad AEROREADY.</li>
+            </ul>
+            <input type="submit" id="submit" class="btn" value="COMPRAR">
+        </div>
+
+        <div class="productos" id="guayos">
+            <div class="guayos">GUAYOS</div>
+            <img src="https://futbolete.com/wp-content/uploads/2019/12/guayos-adidas-predator-2019-paul-pogba-coleccion-e1576248297739.jpg" alt="guayos">
+            <h2>$280.000</h2>
+            <ul>
+                <li>Taches intercambiables.</li>
+                <li>Diseño ligero para mayor comidad.</li>
+                <li>Exterior textil con recubrimiento.</li>
+            </ul>
+            <input type="submit" id="submit" class="btn" value="COMPRAR">
+        </div>
+    </section>
+
+    <section class="form">
+        <h3>“Imposisible is Nothing”</h3>
+        <form id="form" action="https://www.freecodecamp.org/email-submit">
+            <input name="Nombre" id="name" type="text" placeholder="Escribe tu nombre" required> 
+            <input name="Apellido" id="last-name" type="text" placeholder="Escribe tus apellidos" required>
+            <input name="email" id="email" type="email" placeholder="Escribe tu email" required>
+            <input id="submit" type="submit" value="REGISTRARSE">
+        </form>
+    </section>
+<footer>
+    <ul >
+        <li><a href="#">CONTACTO</a></li>
+        <li><a href="#">COOKIES</a></li>
+        <li><a href="https://www.adidas.co/">PÁGINA PRINCIPAL</a></li>
+    </ul>
+    <span>&#9400;opyright 2021, Adidas.</span>
+</footer>
+</body>
+</html>
