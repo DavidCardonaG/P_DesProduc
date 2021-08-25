@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D_Producto</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body id="main">
@@ -98,17 +100,28 @@
             </ul>
             <input type="submit" id="submit" class="btn" value="COMPRAR">
         </div>
+        <div class="row" id="products"></div>
+        <template id="template-product">
+            <div class="card">
+              <h5></h5>
+                <img id="image" src="" alt="" class="img-thumbnail my-4"></img>
+                <p></p>
+                <span id="price"></span>
+                <input type="submit" value="COMPRAR"  onclick="Comprar(this);" id="btnC" class="btnC"></input>
+            </div>
+          </template>
     </section>
 
     <section class="form">
         <h3>“Imposisible is Nothing”</h3>
-        <form id="form" action="https://www.freecodecamp.org/email-submit">
+        <form id="form" action="https://www.freecodecamp.org/email-submit" onsubmit="">
             <input name="Nombre" id="name" type="text" placeholder="Escribe tu nombre" required> 
             <input name="Apellido" id="last-name" type="text" placeholder="Escribe tus apellidos" required>
             <input name="email" id="email" type="email" placeholder="Escribe tu email" required>
             <input id="submit" type="submit" value="REGISTRARSE">
         </form>
     </section>
+    
 <footer>
     <ul >
         <li><a href="#">CONTACTO</a></li>
@@ -117,5 +130,6 @@
     </ul>
     <span>&#9400;opyright 2021, Adidas.</span>
 </footer>
+<script type="module" src="./scripts/scripts.js"></script>
 </body>
 </html>
